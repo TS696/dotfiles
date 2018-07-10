@@ -1,0 +1,13 @@
+snippet TimerCoroutine
+options head
+    private IEnumerator ${1:fnc} (float interval){
+        var time = 0f;
+
+        while(time < interval){
+            time += Time.deltaTime;
+            var t = Mathf.Min(1,time/interval);
+            
+            yield return null;
+        }
+    }
+
