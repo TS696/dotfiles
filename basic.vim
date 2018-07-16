@@ -6,7 +6,6 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set smartindent
-set list
 set nrformats-=octal
 set hidden
 set history=300
@@ -15,6 +14,7 @@ set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmenu
 set completeopt=menuone
+set nowrap
 
 "タブページの設定
 " Anywhere SID.
