@@ -82,42 +82,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cs_checkers = ['code_checker']
 
-"OmniSharpKeymapping
-autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<cr>
-autocmd FileType cs let mapleader = 'o'
-autocmd FileType cs nnoremap <leader>fi :OmniSharpFindImplementations<cr>
-autocmd FileType cs nnoremap <leader>ft :OmniSharpFindType<cr>
-autocmd FileType cs nnoremap <leader>fs :OmniSharpFindSymbol<cr>
-autocmd FileType cs nnoremap <leader>fu :OmniSharpFindUsages<cr>
-autocmd FileType cs nnoremap <leader>fm :OmniSharpFindMembers<cr>
-
-autocmd FileType cs nnoremap <leader>x  :OmniSharpFixIssue<cr>
-autocmd FileType cs nnoremap <leader>fx :OmniSharpFixUsings<cr>
-autocmd FileType cs nnoremap <leader>tt :OmniSharpTypeLookup<cr>
-autocmd FileType cs nnoremap <leader>d  :OmniSharpDocumentation<cr>
-
-autocmd FileType cs nnoremap <C-K> :OmniSharpNavigateUp<cr>
-autocmd FileType cs nnoremap <C-J> :OmniSharpNavigateDown<cr>
-
-autocmd FileType cs nnoremap <leader>rn :OmniSharpRename<cr>
-autocmd FileType cs nnoremap <leader>cf :OmniSharpCodeFormat<cr>
-autocmd FileType cs nnoremap <leader>rl :OmniSharpReloadSolution<cr>
-
-" Plugin key-mappings.
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-
-" SuperTab like snippets behavior.
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-"imap <expr><TAB>
-" \ pumvisible() ? "\<C-n>" :
-" \ neosnippet#expandable_or_jumpable() ?
-" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
 " For conceal markers.
 if has('conceal')
   set conceallevel=2 concealcursor=niv
@@ -126,5 +90,4 @@ let g:neosnippet#snippets_directory='~/dotfiles/snippets/'
 
 "NERDTree
 let NERDTreeIgnore=['\.meta$','\.swp$','\~$']
-map <C-n> :NERDTreeTabsToggle<CR>
 let NERDTreeShowHidden=1
