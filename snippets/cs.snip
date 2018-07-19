@@ -11,3 +11,18 @@ options head
         }
     }
 
+snippet UnityDefault
+options head
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    public class ${1:classname} : MonoBehaviour {
+
+    }
+
+snippet summary
+options head
+    ///<summary>
+    ///${1:command}
+    ///</summary>
