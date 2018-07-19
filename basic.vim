@@ -15,6 +15,13 @@ set backspace=indent,eol,start
 set wildmenu
 set completeopt=menuone
 set nowrap
+set autoread
+set undodir=D:/.vim/backup
+
+augroup vimrc-checktime
+    autocmd!
+    autocmd WinEnter * checktime
+augroup END
 
 "タブページの設定
 " Anywhere SID.
