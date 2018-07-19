@@ -29,6 +29,7 @@ NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'https://github.com/scrooloose/nerdtree.git'
 call neobundle#end()
 
  " Required:
@@ -121,3 +122,9 @@ if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
 let g:neosnippet#snippets_directory='~/dotfiles/snippets/'
+
+"NERDTree
+autocmd vimenter * NERDTree
+autocmd DirChanged * NERDTree
+let NERDTreeIgnore=['\.meta$','\.swp$','\~$']
+map <C-n> :NERDTreeToggle<CR>
