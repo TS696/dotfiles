@@ -1,4 +1,5 @@
 syntax enable
+set encoding=utf-8
 set number
 set title
 set ambiwidth=double
