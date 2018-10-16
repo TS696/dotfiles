@@ -18,6 +18,7 @@ set completeopt=menuone
 set nowrap
 set autoread
 set undodir=D:/.vim/backup
+set nobackup
 
 augroup vimrc-checktime
     autocmd!
@@ -69,3 +70,4 @@ map <silent> [Tag]n :tabnext<CR>
 " tn 次のタブ
 map <silent> [Tag]p :tabprevious<CR>
 " tp 前のタブ
+
