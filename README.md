@@ -1,5 +1,5 @@
 # dotfiles
-WindowsでUnity開発を行うときに作ったvimの設定ファイル。  
+自分用vimの設定ファイル。  
 vimはluaを導入したもの使う。
 
 1: ~/ にクローン。  
